@@ -1,0 +1,729 @@
+#LyX 2.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 474
+\begin_document
+\begin_header
+\textclass article
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_math auto
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref true
+\pdf_bookmarks true
+\pdf_bookmarksnumbered false
+\pdf_bookmarksopen false
+\pdf_bookmarksopenlevel 1
+\pdf_breaklinks true
+\pdf_pdfborder true
+\pdf_colorlinks false
+\pdf_backref false
+\pdf_pdfusetitle true
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine natbib
+\cite_engine_type authoryear
+\biblio_style cje
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Introduction to LyX for economics students 
+\end_layout
+
+\begin_layout Author
+C Barrington-Leigh
+\end_layout
+
+\begin_layout Date
+McGill, October 2014
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset toc
+LatexCommand tableofcontents
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Introduction and setup
+\end_layout
+
+\begin_layout Standard
+There's nothing particular about usage for Economics, except perhaps for
+ the choice of citation style and bibliography style.
+ However, I've put this file together help get students (and colleagues!)
+ up and running for the first time.
+ There are three steps; allocate one hour or 90 minutes to go through them:
+\end_layout
+
+\begin_layout Enumerate
+Download and install LyX (and anything else that the Download page says
+ you need, like a LaTeX installation): 
+\begin_inset Flex URL
+status open
+
+\begin_layout Plain Layout
+
+http://lyx.org
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Read a tutorial.
+ Start up LyX and, under the Help menu, find and go through the Tutorial.
+ Then browse through the User Guide.
+ The tutorial is 
+\emph on
+key
+\emph default
+ to understand the major differences in mindset between a compiled typesetting
+ language and the dominant alternative.
+\end_layout
+
+\begin_layout Enumerate
+Go through this example, by:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Download a BibTeX citation from a journal page or Google Scholar.
+ To get Google Scholar to show you BibTeX links by default, directly its
+ search results page, just edit your Scholar preferences.
+ Similarly, you should tell Scholar that you are at McGill (or etc) to get
+ it to include links to the library subscription (free) versions of articles.
+ The journal copies (ie, on the publisher's page) of citation data are better
+ than Google's, in general, as the latter are automatically generated.
+ Each article on a journal's web page will have a link to download or view
+ the citation, and BibTeX will be the top or one of the top choices of format.
+\end_layout
+
+\begin_layout Enumerate
+Use a text editor to edit the citation and either save it as a new file,
+ 
+\begin_inset Quotes eld
+\end_inset
+
+mytopic.bib
+\begin_inset Quotes erd
+\end_inset
+
+, or add it to an existing BibTeX database like 
+\begin_inset Quotes eld
+\end_inset
+
+learningexample.bib
+\begin_inset Quotes erd
+\end_inset
+
+, which comes with this file.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Using a 
+\emph on
+plain-text editor 
+\emph default
+(look that up!) which your operating syxtem provides, edit the BibTeX entry
+ by pasting or loading it in.
+ Change the first line, which is called the 
+\emph on
+key
+\emph default
+, of the BibTeX entry, to my preferred format:
+\end_layout
+
+\begin_layout LyX-Code
+@article{author1surname-author2surname-AER2011-keyword1-keyword2,
+\end_layout
+
+\begin_layout Standard
+That is, separate the authors' surnames by dashes, followed by the journal
+ abbreviation or acronym and the year of publication, followed, optionally,
+ by some keywords or title words, also separated by dashes.
+ The key is followed by a comma to conform to the database format.
+ Save your file.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+If you've made a new BibTeX file, add it to the database used in this LyX
+ file by clicking on the Bibliography box at the bottom and adding it.
+ You can include as many .bib files as you need.
+\end_layout
+
+\begin_layout Enumerate
+Insert some new citations (Insert -> Citation) into this document to make
+ use of your new entry.
+ 
+\begin_inset Quotes eld
+\end_inset
+
+Compile your document to PDF (Ctrl-R or Command-R).
+ If you get an error, it is likely a problem with the formatting of your
+ new citation in the BibTeX database file.
+ In general, 
+\series bold
+cite and compile (in LyX) each reference as soon as you add it to the database.
+
+\series default
+ That way, you will not let formatting errors accumulate there.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+After this, you will be ready to make your own documents, nearly from scratch.
+ However, it'll be best to start from (copy and edit) this one at first,
+ because there are a few settings set for you already.
+ To start from scratch, here are the things you'll want to set up:
+\end_layout
+
+\begin_layout Enumerate
+Under Document 
+\begin_inset Formula $\rightarrow$
+\end_inset
+
+ Settings 
+\begin_inset Formula $\rightarrow$
+\end_inset
+
+Bibliography, set your defaults to Natbib.
+ Save as 
+\begin_inset Quotes eld
+\end_inset
+
+document defaults
+\begin_inset Quotes erd
+\end_inset
+
+ to apply it to your future documents too.
+\end_layout
+
+\begin_layout Enumerate
+Under Document 
+\begin_inset Formula $\rightarrow$
+\end_inset
+
+ Settings 
+\begin_inset Formula $\rightarrow$
+\end_inset
+
+PDF, turn on Hyperref.
+\end_layout
+
+\begin_layout Enumerate
+Insert a bibliography into your document, and choose one (or more) BibTeX
+ file to use for it.
+\end_layout
+
+\begin_layout Enumerate
+Choose a format for your bibliography (I suggest cje or aer if you have
+ them as options; otherwise you may need to grab those styles from somewhere).
+\end_layout
+
+\begin_layout Section
+Annotated bibliography
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:Annotated-bibliography"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Here we introduce each bibliographic reference.
+\end_layout
+
+\begin_layout Subsection
+This is a subsection
+\end_layout
+
+\begin_layout Standard
+Citations come in two forms: Sometimes a reference is a subject or object
+ in a sentence.
+ 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Absolute-Astronomy-2014-GPI"
+
+\end_inset
+
+ said some things.
+\end_layout
+
+\begin_layout Standard
+Usually we do not use footnotes, but 
+\end_layout
+
+\begin_layout Standard
+Often, though, the citation is only indirectly referenced in the sentence,
+ we call these parenthetical citations 
+\begin_inset CommandInset citation
+LatexCommand citep
+before "e.g."
+key "Anad-Sen-HDRO1994-HDI-methodology,Anielski-2001-Alberta-GPI-Blueprint"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Rarely do we use footnotes to cite interesting facts.
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+See 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Anad-Sen-HDRO1994-HDI-methodology"
+
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+
+\end_layout
+
+\begin_layout Section
+Here we demo some cross-referencing
+\end_layout
+
+\begin_layout Standard
+You should always have some text in between a heading and its first subheading.
+\end_layout
+
+\begin_layout Subsection
+Equations
+\end_layout
+
+\begin_layout Standard
+The prettiest equation we've found so far is
+\begin_inset Formula 
+\begin{equation}
+e^{i\pi}=-1\label{eq:unified}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+You can see how 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "eq:unified"
+
+\end_inset
+
+ unifies key values from algebra, calculus, and complex analysis.
+\end_layout
+
+\begin_layout Subsection
+Tables and figures 
+\end_layout
+
+\begin_layout Standard
+For both figures and tables, you should almost always 
+\emph on
+not 
+\emph default
+stick them straight in the flow of text, but rather let them 
+\emph on
+float.
+
+\emph default
+ For instance, for a table, insert a 
+\begin_inset Quotes eld
+\end_inset
+
+float: Table
+\begin_inset Quotes erd
+\end_inset
+
+ environment, and inside it insert the actual table, and a caption.
+ See 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "tab:Nice-table"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="6" columns="4">
+<features rotate="0" tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\alpha$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\beta$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\gamma$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+a
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+b
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+b
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Nice table.
+ 
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:Nice-table"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset bibtex
+LatexCommand bibtex
+bibfiles "lyxintro"
+options "bibtotoc,cje"
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document
