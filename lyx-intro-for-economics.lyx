@@ -1,9 +1,7 @@
 #LyX 2.2 created this file. For more info see http://www.lyx.org/
-\lyxformat 508
+\lyxformat 474
 \begin_document
 \begin_header
-\save_transient_properties true
-\origin unavailable
 \textclass article
 \use_default_options true
 \maintain_unincluded_children false
@@ -11,16 +9,16 @@
 \language_package default
 \inputencoding auto
 \fontencoding global
-\font_roman "default" "default"
-\font_sans "default" "default"
-\font_typewriter "default" "default"
-\font_math "auto" "auto"
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_math auto
 \font_default_family default
 \use_non_tex_fonts false
 \font_sc false
 \font_osf false
-\font_sf_scale 100 100
-\font_tt_scale 100 100
+\font_sf_scale 100
+\font_tt_scale 100
 \graphics default
 \default_output_format default
 \output_sync 0
@@ -81,8 +79,7 @@
 \begin_body
 
 \begin_layout Title
-Introduction to \SpecialChar LyX
- for economics students 
+Introduction to LyX for economics students 
 \end_layout
 
 \begin_layout Author
@@ -115,10 +112,8 @@ There's nothing particular about usage for Economics, except perhaps for
 \end_layout
 
 \begin_layout Enumerate
-Download and install \SpecialChar LyX
- (and anything else that the Download page says you
- need, like a \SpecialChar LaTeX
- installation): 
+Download and install LyX (and anything else that the Download page says you
+ need, like a LaTeX installation): 
 \begin_inset Flex URL
 status open
 
@@ -134,8 +129,7 @@ http://lyx.org
 
 \begin_layout Enumerate
 Read a tutorial.
- Start up \SpecialChar LyX
- and, under the Help menu, find and go through the Tutorial.
+ Start up LyX and, under the Help menu, find and go through the Tutorial.
  Then browse through the User Guide.
  The tutorial is 
 \emph on
@@ -147,26 +141,20 @@ key
 
 \begin_layout Enumerate
 Go through this example, by:
-\begin_inset Separator latexpar
-\end_inset
-
-
 \end_layout
+
 
 \begin_deeper
 \begin_layout Enumerate
-Download a Bib\SpecialChar TeX
- citation from a journal page or Google Scholar.
- To get Google Scholar to show you Bib\SpecialChar TeX
- links by default, directly its search
+Download a BibTeX citation from a journal page or Google Scholar.
+ To get Google Scholar to show you BibTeX links by default, directly its search
  results page, just edit your Scholar preferences.
  Similarly, you should tell Scholar that you are at McGill (or etc) to get
  it to include links to the library subscription (free) versions of articles.
  The journal copies (ie, on the publisher's page) of citation data are better
  than Google's, in general, as the latter are automatically generated.
  Each article on a journal's web page will have a link to download or view
- the citation, and Bib\SpecialChar TeX
- will be the top or one of the top choices of format.
+ the citation, and BibTeX will be the top or one of the top choices of format.
 \end_layout
 
 \begin_layout Enumerate
@@ -179,8 +167,7 @@ mytopic.bib
 \begin_inset Quotes erd
 \end_inset
 
-, or add it to an existing Bib\SpecialChar TeX
- database like 
+, or add it to an existing BibTeX database like 
 \begin_inset Quotes eld
 \end_inset
 
@@ -189,11 +176,8 @@ learningexample.bib
 \end_inset
 
 , which comes with this file.
-\begin_inset Separator latexpar
-\end_inset
-
-
 \end_layout
+
 
 \begin_deeper
 \begin_layout Standard
@@ -201,15 +185,13 @@ Using a
 \emph on
 plain-text editor 
 \emph default
-(look that up!) which your operating syxtem provides, edit the Bib\SpecialChar TeX
- entry
+(look that up!) which your operating syxtem provides, edit the BibTeX entry
  by pasting or loading it in.
  Change the first line, which is called the 
 \emph on
 key
 \emph default
-, of the Bib\SpecialChar TeX
- entry, to my preferred format:
+, of the BibTeX entry, to my preferred format:
 \end_layout
 
 \begin_layout LyX-Code
@@ -226,9 +208,8 @@ That is, separate the authors' surnames by dashes, followed by the journal
 
 \end_deeper
 \begin_layout Enumerate
-If you've made a new Bib\SpecialChar TeX
- file, add it to the database used in this \SpecialChar LyX
- file
+If you've made a new BibTeX
+ file, add it to the database used in this LyX file
  by clicking on the Bibliography box at the bottom and adding it.
  You can include as many .bib files as you need.
 \end_layout
@@ -242,12 +223,10 @@ Insert some new citations (Insert -> Citation) into this document to make
 
 Compile your document to PDF (Ctrl-R or Command-R).
  If you get an error, it is likely a problem with the formatting of your
- new citation in the Bib\SpecialChar TeX
- database file.
+ new citation in the BibTeX database file.
  In general, 
 \series bold
-cite and compile (in \SpecialChar LyX
-) each reference as soon as you add it to the database.
+cite and compile (in LyX) each reference as soon as you add it to the database.
 
 \series default
  That way, you will not let formatting errors accumulate there.
@@ -295,8 +274,7 @@ PDF, turn on Hyperref.
 \end_layout
 
 \begin_layout Enumerate
-Insert a bibliography into your document, and choose one (or more) Bib\SpecialChar TeX
- file
+Insert a bibliography into your document, and choose one (or more) BibTeX file
  to use for it.
 \end_layout
 
